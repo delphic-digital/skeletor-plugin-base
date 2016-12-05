@@ -1,5 +1,5 @@
 import $ from 'jquery';
-import skeletor from './skeletor.core';
+import skeletor from 'skeletor-core';
 
 class SkeletorPlugin extends HTMLElement {
 
