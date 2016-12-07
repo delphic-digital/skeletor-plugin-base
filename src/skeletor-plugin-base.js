@@ -26,8 +26,14 @@ class SkeletorPlugin extends HTMLElement {
 		console.log('connected:',this);
 	}
 
-	//Define custom element element here
-	static register(elementName){
+	//Define custom element here
+	static register(){
+		let elementName = this.ELEMENT_NAME;
+
+		if(!elementName){
+			throw new TypeError(`You need to define an element name for you component`);
+		}
+
 		skeletor.registerComponent(this, this.ELEMENT_NAME);
 	}
 
