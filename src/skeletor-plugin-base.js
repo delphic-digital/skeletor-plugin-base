@@ -5,7 +5,7 @@ class SkeletorPlugin extends HTMLElement {
 
 	constructor(element, options){
 		super();
-		this.NAME = this.constructor.name;
+		this.NAME = this.constructor.ELEMENT_NAME;
 		this.UUID = skeletor.getYoDigits(6, this.NAME);
 		this.$element = $(this) || $(document);
 		this.options = options;
